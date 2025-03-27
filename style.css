@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0E59A9;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    margin: 0;
+}
+
+
+.wrapper {
+    width: 1100px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    min-height: 100vh;
+    box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.75);
+    background-color: #C2D3E4;
+}
+
+/* ////////////////////////////////// */
+
+
+/* //////header section */
+
+
+#header {
+    padding: 2rem;
+    background-color: green;
+}
+
+
+/* /////////////end of header */
+
+
+/* beginning of nav */
+
+
+#nav {
+    display: flex;
+    padding-left: 1rem;
+
+}
+
+#nav ul {
+    display: flex;
+}
+
+
+#nav ul li {
+    list-style-type: none;
+    padding: 1rem;
+}
+
+/* end of nav */
+/* /////////////////////// */
+
+/* //////////////////////////////////////// beginning of content */
+
+
+#content {
+    /* float: left !important; */
+    /* width: 55%; */
+    flex: 1;
+    background: red;
+}
+
+
+
+
+/* ////////////////////////////////////////////////end of content  */
+
+
+
+/* ////////////////////////////////////////////////////////////////////////////////// Gallery */
+
+
+#gallery {
+    /* float: right !important; */
+    /* width: 45%; */
+    flex: 2;
+    background: pink;
+
+}
+
+
+
+.galleryContent {
+    width: 100%;
+    display: flex;
+}
+
+
+
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////// end of gallery */
+
+
+
+
+
+
+/* ///////////////////////////slide show  */
+
+#slideshow {
+    position: relative;
+    height: 500px;
+    width: 100%;
+    padding: 1rem;
+}
+
+#slideshow img {
+    position: absolute;
+    padding: 1rem;
+    border-radius: 5%;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: 8;
+}
+
+img:hover {
+    cursor: pointer
+}
+
+#slideshow img.active {
+    z-index: 10;
+}
+
+#slideshow img.last-active {
+    z-index: 9;
+}
+
+
+
+/* ////////////////////////////////////// end of slideshow  */
+
+
+
+
+
+
+
+/* ////////////////////////// beginning of footer */
+#footer {
+    padding: .4rem;
+    background-color: green;
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    clear: both;
+}
+
+
+#footer ul {
+    display: flex;
+}
+
+#footer ul li {
+    list-style-type: none;
+    padding: .5rem;
+    padding-left: 1rem;
+}
+
+
+.list2 {
+    padding-right: .5rem;
+}
