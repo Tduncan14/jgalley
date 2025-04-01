@@ -21,6 +21,7 @@ body {
     min-height: 100vh;
     box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.75);
     background: coral;
+    border-radius: 9%;
 
 }
 
@@ -67,6 +68,13 @@ body {
     padding: 1rem;
 }
 
+
+
+li:hover {
+    color: coral;
+    cursor: pointer;
+}
+
 /* end of nav */
 /* /////////////////////// */
 
@@ -77,11 +85,33 @@ body {
     /* float: left !important; */
     /* width: 55%; */
     flex: 1;
+    padding-left: 2rem;
+    padding-right: 3rem;
+
+
 
 }
 
 
 
+.contentOne {
+    padding-left: 2rem;
+    padding-right: 3rem;
+
+}
+
+
+.contentOne h1 {
+    text-align: center;
+    color: #C2D3E4;
+
+}
+
+
+.contentOne p {
+    color: #F0F8FF;
+
+}
 
 /* ////////////////////////////////////////////////end of content  */
 
@@ -96,6 +126,7 @@ body {
     flex: 1;
     background-color: #C2D3E4;
     margin-right: 1rem;
+    height: 100%;
 
 
 }
@@ -105,7 +136,7 @@ body {
 .galleryContent {
     width: 100%;
     display: flex;
-    padding-bottom: 4rem;
+    padding-bottom: 7rem;
     padding-top: 4rem;
 }
 
@@ -126,6 +157,7 @@ body {
     position: relative;
     height: 500px;
     width: 100%;
+    max-height: 100%;
     padding: 1rem;
 }
 
@@ -135,6 +167,7 @@ body {
     border-radius: 5%;
     height: 100%;
     width: 100%;
+    max-height: 100%;
     object-fit: cover;
     top: 0;
     left: 0;
@@ -188,3 +221,81 @@ img:hover {
 .list2 {
     padding-right: .5rem;
 }
+
+
+
+
+/* mediaaaaaaaaaaaaaaaaaaaa resize */
+
+
+@media screen and (max-width:700px) {
+
+
+    .wrapper {
+        width: 100%;
+    }
+
+
+    .nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    .galleryContent {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+
+
+    #content {
+        padding-left: auto;
+        padding-right: auto;
+    }
+
+    .list {
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #slideshow {
+        padding-left: auto;
+        padding-right: auto;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+
+    #gallery {
+        margin-right: 0;
+        margin-top: 1rem;
+
+
+    }
+
+
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ///////////////////////////////////////// */
