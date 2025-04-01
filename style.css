@@ -236,9 +236,21 @@ img:hover {
     }
 
 
-    .nav {
+    #nav {
         display: flex;
+        padding-right: 3rem;
         justify-content: center;
+    }
+
+
+
+
+
+
+    ul {
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
     }
 
     .galleryContent {
@@ -252,12 +264,19 @@ img:hover {
     #content {
         padding-left: auto;
         padding-right: auto;
+        display: flex;
+        flex-direction: column;
     }
 
-    .list {
-        text-align: center;
-        margin-right: auto;
-        margin-left: auto;
+    .contentOne {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+
+    .contentOne {
+        padding-left: a;
+        padding-right: auto;
     }
 
     #slideshow {
@@ -283,6 +302,15 @@ img:hover {
         flex-direction: column;
         text-align: center;
         justify-content: center;
+    }
+
+
+    .listresponsive {
+        padding-right: 3rem;
+    }
+
+    .list2 {
+        padding-right: 3rem;
     }
 }
 
